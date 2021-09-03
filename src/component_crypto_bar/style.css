@@ -1,0 +1,66 @@
+.cryptobar_wrapper {
+    margin-top: 1em;
+    height: 8em;
+    overflow: auto;
+    display: flex;
+}
+
+.items_wrapper {
+    display: flex;
+}
+
+
+.cryptobar_wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.cryptobar_item {
+    height: 7em;
+    display: flex;
+    align-items: center;
+    background: #cacaca;
+    margin: 0 1em;
+    border-radius: 1em;
+    min-width: 300px;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+}
+
+.cryptobar_item img{
+    /* height: 80%; */
+    padding-left: 1em;
+    width: 30%;
+}
+
+.cryptobar_item p{
+    font-size: 2.5rem;
+    width: 70%;
+    text-align: center;
+}
+
+.green {
+    color: #2E8F00;
+}
+
+.red {
+    color: #8F0000;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .cryptobar_wrapper {
+        height: 5em;
+    }
+
+    .cryptobar_item {
+        height: 4em;
+        margin: 0 0.5em;
+        min-width: 150px;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    }
+
+    .cryptobar_item p{
+        font-size: 1.2rem;
+        /* padding: 0.3em; */
+    }
+}
